@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'fira_sans';
+    src: url('../webfonts/firasans-ultralight-webfont.woff2') format('woff2'),
+         url('../webfonts/firasans-ultralight-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sans';
+    src: url('../webfonts/firasans-light-webfont.woff2') format('woff2'),
+         url('../webfonts/firasans-light-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sans';
+    src: url('../webfonts/firasans-bold-webfont.woff2') format('woff2'),
+         url('../webfonts/firasans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sans';
+    src: url('../webfonts/firasans-heavy-webfont.woff2') format('woff2'),
+         url('../webfonts/firasans-heavy-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zilla_slab';
+    src: url('../webfonts/zillaslab-light-webfont.woff2') format('woff2'),
+         url('../webfonts/zillaslab-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'zilla_slab';
+    src: url('../webfonts/zillaslab-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/zillaslab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'zilla_slab';
+    src: url('../webfonts/zillaslab-semibold-webfont.woff2') format('woff2'),
+         url('../webfonts/zillaslab-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
