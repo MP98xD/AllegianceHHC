@@ -1,9 +1,16 @@
-html, body, #content, .page {
-	font-family: zilla_slab, serif;
+* {
 	margin: 0;
 	padding: 0;
+}
+
+html, body, #content, .page {
+	font-family: zilla_slab, serif;
 	width: 100%;
 	height: 100%;
+}
+
+.aname {
+	display: block;
 }
 
 .page {
@@ -17,21 +24,22 @@ html, body, #content, .page {
 header {
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 }
 header #logo, header #navbar, header #navbar ul li {
 	float: left;
 }
 
 header #logo {
-	margin: 4vh 5vw 0;
+	margin: 6vh 3vw 0;
 }
 header #logo img {
-	width: 11vw;
+	width: 10vw;
     height: auto;
 }
 
 header #navbar {
-    margin: 6vh 5vw 0;
+    margin: 7vh 0 0 15vw;
 }
 header #navbar ul li {
 	list-style-type: none;
@@ -51,27 +59,88 @@ header #navbar ul li a {
 	position: fixed;
 	top: 50%;
 	right: 0;
-	width: 5vw;
-	height: 30vh;
-	margin-top: -15vh;
+	width: 4.5vw;
+	height: 41vh;
+	margin-top: -20.5vh;
+	z-index: 3;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
+#socialMedia ul li {
+	list-style: none;
+	
+}
+#socialMedia ul li a {
+	display: block;
+	margin: 1vh 0 1vh 1vw;
+}
+#socialMedia ul li a img {
+	width: 2.5vw;
+	height: auto;
+}
+
+
+/* Scrollers */
+#controls div {
+	position: fixed;
+	right: 2vw;
+	z-index: 4;
+}
+#controls div a {
+	display: block;
+}
+#controls #scrollUp {
+	top: 2vh;
+}
+#controls #scrollDown {
+	bottom: 2vh;
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+	-moz-transform: rotate(180deg);        /* FF */
+	-o-transform: rotate(180deg);          /* Opera */
+	-ms-transform: rotate(180deg);         /* IE9 */
+	transform: rotate(180deg);             /* W3C compliant browsers */
+
+	/* IE8 and below */
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand');
+}
+#controls div a img {
+	width: 4vw;
+	height: auto;
+}
+
 
 
 /* Home Page */
 .page#homePage {
 	background-image: url("../images/bg_home.png");
+	color: rgba(61, 122, 153, 1.00);
+	font-family: fira_sans, sans-serif;
 }
 
 .page#homePage #homeAllegiance {
-	
+	font-weight: 100;
+	font-size: 60pt;
+	position: absolute;
+	top: 35vh;
+	left: 18vw;
 }
 
 .page#homePage #homeHealthCare {
-	
+	font-weight: 200;
+	font-size: 35pt;
+	margin: 0;
+	width: 15vw;
+	position: absolute;
+	top: 48vh;
+	left: 18vw;
 }
 
 .page#homePage h3 {
-	
+	font-weight: bolder;
+	font-size: 40pt;
+	position: absolute;
+	top: 72vh;
+	left: 18vw;
 }
 .page#homePage h3 #homeEmp {
 	
@@ -85,8 +154,6 @@ header #navbar ul li a {
 
 .page#ourServices ul {
 	float: left;
-    margin: 0;
-    padding: 0;
 	position: absolute;
 	top: 120vh;
 	left: 15vw;
@@ -96,7 +163,7 @@ header #navbar ul li a {
 	font-size: 11pt;
 	color: rgba(76, 76, 76, 1.00);
 	list-style-type: none;
-	background-image: url("../images/checkmark.png");
+	background-image: url("../images/checkmark.svg");
 	background-size: 1.5vw auto;
 	background-repeat: no-repeat;
 	background-position-y: center;
@@ -116,8 +183,6 @@ header #navbar ul li a {
 }
 
 .page#ourServices p {
-	margin: 0;
-	padding: 0;
 	width: 33vw;
 	font-weight: normal;
 	font-size: 17pt;
