@@ -33,7 +33,7 @@ header #logo, header #navbar, header #navbar ul li {
 }
 
 header #logo {
-	margin: 6vh 3vw 0;
+	margin: 4vh 0 0 13vw;
 }
 header #logo img {
 	width: 10vw;
@@ -41,7 +41,7 @@ header #logo img {
 }
 
 header #navbar {
-    margin: 7vh 0 0 15vw;
+    margin: 7vh 0 0 5vw;
 }
 header #navbar ul li {
 	list-style-type: none;
@@ -53,6 +53,15 @@ header #navbar ul li a {
 	text-decoration: none;
 	color: white;
 }
+.fp-viewing-servicesSection header #navbar ul li a,
+.fp-viewing-aboutSection header #navbar ul li a,
+.fp-viewing-contactSection header #navbar ul li a {
+	color: rgba(65, 65, 65, 1.0);
+}
+.fp-viewing-homeSection header #navbar ul li a {
+	color: white;
+}
+
 
 
 /* Side bar */
@@ -207,13 +216,101 @@ header #navbar ul li a {
 
 /* About Us */
 .page#aboutUs {
-	background-image: url("../images/bg_home.png");
-	display: none;
+	background: rgba(204, 220, 219, 1.00) url("../images/coffee.png") no-repeat center center;
+	background-size: 30%;
+}
+.page#aboutUs article {
+	width: 23%;
+	line-height: 16pt;
+	text-align: justify;
+	position: relative;
+	top: 30%;
+	float: left;
+}
+.page#aboutUs #mission {
+	left: 15%;
+}
+.page#aboutUs #vision {
+	left: 39%;
+}
+.page#aboutUs article h2 {
+	font-weight: 100;
+	color: rgba(195, 112, 57, 1.00);
+	margin-bottom: 10px;
+}
+.page#aboutUs article p {
+	font-weight: normal;
+	color:rgba(65, 64, 64, 1.00);
 }
 
 
 /* Contact Us */
 .page#contactUs {
-	background-image: url("../images/bg_home.png");
-	display: none;
+	background: rgba(240, 240, 240, 1.00) url("../images/chair.png") no-repeat center bottom;
+	background-size: 40%;
+}
+.page#contactUs article {
+	float: left;
+	position: relative;
+	top: 22%;
+	left: 13%;
+	width: 25%;
+}
+.page#contactUs #contactInfo div.info {
+	margin-bottom: 20px;
+	font-size: 14pt;
+	line-height: 17pt;
+}
+.page#contactUs #contactInfo div.info h3 {
+	color: rgba(197, 127, 83, 1.0);
+	font-weight: normal;
+	margin-bottom: 2px;
+}
+.page#contactUs #contactInfo div.info p {
+	color: rgba(65, 65, 65, 1.0);
+}
+.page#contactUs #contactInfo div#map {
+	height: 35vh;
+}
+.page#contactUs #contactOr {
+	text-align: center;
+	font-size: 35pt;
+	font-weight: bold;
+	color: rgba(85, 85, 85, 1.0);
+	line-height: 10pt;
+}
+.page#contactUs #contactForm {
+	text-align: center;
+}
+.page#contactUs #contactForm input, .page#contactUs #contactForm textarea {
+	width: 90%;
+	background-color: rgba(248, 248, 248, 1.0);
+	font-size: 15pt;
+	margin: 0px 0 5%;
+	line-height: 20pt;
+	padding: 5px 10px;
+	color: rgba(197, 127, 83, 1.0);
+	border: none;
+	box-shadow: 0px 0px 10px -8px black;
+}
+.page#contactUs #contactForm input:hover, .page#contactUs #contactForm textarea:hover {
+	box-shadow: 0px 0px 9px -4px rgb(197, 127, 83);
+}
+.page#contactUs #contactForm input:focus, .page#contactUs #contactForm textarea:focus {
+	box-shadow: 0px 0px 4px 0px rgb(197, 127, 83);
+}
+.page#contactUs #contactForm button {
+	width: 35%;
+	background-color: rgba(248, 248, 248, 1.0);
+	font-size: 15pt;
+	margin: 0px 0 5%;
+	line-height: 20pt;
+	padding: 5px 10px;
+	color: rgba(197, 127, 83, 1.0);
+	border: none;
+	box-shadow: 0px 0px 10px -8px black;
+}
+.page#contactUs #contactForm button:hover {
+	color: rgba(197, 127, 83, 1.0);
+	box-shadow: 0px 0px 17px -4px rgb(197, 127, 83);
 }

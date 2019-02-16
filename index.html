@@ -18,24 +18,24 @@
 <body>
 	<header>
 		<div id="logo">
-			<img src="images/logo_text.png" width="200" height="147" alt="Allegiance Home Health Care" />
+			<img src="images/logo.png" width="200" height="147" alt="Allegiance Home Health Care" />
 		</div>
 		<nav role="navigation" id="navbar">
-			<ul>
-				<li class="active"><a href="#home">Home</a></li>
-				<li><a href="#services">Our Service</a></li>
-				<li><a href="#about">About Us</a></li>
-				<li><a href="#contact">Contact Us</a></li>
+			<ul id="fullpageMenu">
+				<li data-menuanchor="homeSection" class="active"><a href="#home">Home</a></li>
+				<li data-menuanchor="servicesSection"><a href="#services">Our Service</a></li>
+				<li data-menuanchor="aboutSection"><a href="#about">About Us</a></li>
+				<li data-menuanchor="contactSection"><a href="#contact">Contact Us</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main id="content">
-		<section class="page" id="homePage">
+	<main id="content" class="fullpage">
+		<section class="page section" id="homePage">
 			<a name="home" class="aname"></a>
 			<h2 id="homeAllegiance">Allegiance</h2> <h1 id="homeHealthCare">Home Health Care</h1>
 			<h3>Your <span id="homeEmp">personalized</span> care solutions</h3>
 		</section>
-		<section class="page" id="ourServices">
+		<section class="page section" id="ourServices">
 			<a name="services" class="aname"></a>
 			<ul>
 				<li>Meal Preparation</li>
@@ -59,13 +59,47 @@
 			<p>At Allegiance Home Health Care LLC, we offer professional, reliable 24-Hour Care services to all of our patients. Our home care services take all your specific requests and demands into consideration and guarantee personalized attention. Whatever the hour may be, our dedicated caregivers are readily available to cater to your needs.</p>
 			<img src="images/cactus.png" width="640" height="640" alt="Beautiful Plant of Cactus" />
 		</section>
-		<section class="page" id="aboutUs">
+		<section class="page section" id="aboutUs">
 			<a name="about" class="aname"></a>
-
+			<article id="mission">
+				<h2>Our mission is</h2>
+				<p>To provide high quality home health care services to individuals and their families at home. Promoting independence, healing, and comfort through quality and compassionate care at home.
+We also strive to create an environment where we set our team members up for success empowering them to provide the best in home care services to the community.</p>
+			</article>
+			<article id="vision">
+				<h2>Our vision is</h2>
+				<p>A work environment that instills a desire to serve others desires. The quality of our services is building lasting and unforgettable experiences once customer at a time. Our core values are integrity, excellence, respect, patient focus, leadership, and accountability.</p>
+			</article>
 		</section>
-		<section class="page" id="contactUs">
+		<section class="page section" id="contactUs">
 			<a name="contact" class="aname"></a>
-
+			<article id="contactInfo">
+				<div class="info">
+					<h3>Phone</h3>
+					<p>(208) 123-4567</p>
+				</div>
+				<div class="info">
+					<h3>E-mail</h3>
+					<p>info@careboise.com</p>
+				</div>
+				<div class="info">
+					<h3>Address</h3>
+					<p>1234 W Street St. Suite # 1A<br>Boise, ID 83706</p>
+				</div>
+				<div id="map"></div>
+			</article>
+			<article id="contactOr">
+				or
+			</article>
+			<article id="contactForm">
+				<form action="contact" method="post">
+					<input type="text" name="firstname" placeholder="Name">
+					<input type="tel" name="phonenumber" placeholder="Phone Number">
+					<input type="email" name="email" placeholder="E-mail Address">
+					<textarea name="message" placeholder="Message" rows="5"></textarea>
+					<button type="submit">Send</button>
+				</form>
+			</article>
 		</section>
 	</main>
 	<aside id="socialMedia">
@@ -84,7 +118,8 @@
 	</div>
 	<!-- Scripts -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS-muPYA2B5QRe9DeIgM1KDftTnZ9k7Aw&callback=initMap" type="text/javascript"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
